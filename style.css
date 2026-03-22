@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0a0a0c;
+  color: #fff;
+}
+
+.app {
+  max-width: auto;
+  margin: auto;
+  padding: 0 20px 40px 20px;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  background: #0d0d10;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.logo img {
+  width: 200px;
+  opacity: .9;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.user span {
+  color: #d4af37;
+}
+
+.btn {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+/* WELCOME */
+.welcome {
+  margin-bottom: 40px;
+}
+
+.welcome h1 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.welcome p {
+  color: #888;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* TOP CARDS */
+.top-cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+/* Remove estilo padrão dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.top-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 14px;
+  background: #111;
+  border: 1px solid #1f1f1f;
+  text-align: left;
+  cursor: pointer;
+  transition: .3s;
+  position: relative;
+  display: block; /* garante que o link ocupe todo o card */
+  color: #fff;    /* mantém texto branco */
+}
+
+.top-card:hover {
+  border-color: #d4af37;
+}
+
+.top-card:hover::after {
+  opacity: 1;
+}
+
+.top-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff; /* garante que o título não fique azul */
+}
+
+/* EXPERIÊNCIAS */
+.section-title {
+  font-size: 16px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.exp-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background: #111;
+  border-radius: 14px;
+  border: 1px solid #1f1f1f;
+  transition: .3s;
+}
+
+.exp-card:hover {
+  border-color: #d4af37;
+}
+
+.exp-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.exp-content h3 {
+  font-size: 15px;
+  color: #d4af37;
+  margin-bottom: 5px;
+}
+
+.exp-content p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.exp-info {
+  font-size: 12px;
+  color: #777;
+  margin-top: 6px;
+}
